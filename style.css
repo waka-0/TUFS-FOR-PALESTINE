@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "游明朝";
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+    color: #fff;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding: 5px 20px;
+}
+header .header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .site-logo {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 3px;
+}
+header .overlay {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s;
+  }
+header .overlay .menu-btn_close {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+header .overlay.show {
+    transform: none;
+}
+.navigation ul li {
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    line-height: 100px;
+}
+.container {
+    /*margin: 50px 30px;*/
+    margin: 50px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.main-visual {
+    margin-top: 60px;
+    padding: 60px 0 50px 80px;
+    background-color: #8fbc8f;
+}
+.main-visual h1 {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.main-visual dl {
+    padding-top: 200px;
+}
+.main-visual dl dt {
+    border-bottom: solid 1px black;
+    margin-right: 120px;
+}
+.main-visual dl dd {
+    padding-bottom: 10px;
+}
+
+.about {
+    text-align: center;
+    padding-top: 30px;
+}
+.span {
+    margin-top: 20px;
+}
+.about-content {
+    margin-top: 50px;
+}
+.about p {
+    margin-bottom: 30px;
+}
+.about button {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px black;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.about button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.about .toggle {
+    line-height: 0;
+    display: none;
+}
+.about .toggle.show {
+    display: block;
+    line-height: 25px;
+    transform: none;
+}
+
+h2 {
+    border-bottom: solid 1px black;
+    padding-top: 60px;
+}
+
+.access p {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.access .google-maps {
+    border: solid 1px black;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.access iframe {
+    height: 300px;
+    width: 100%;
+}
+.access ul li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.access ul li span {
+    display: block;
+}
+.access a {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.seminar h2 span {
+    display: block;
+}
+.seminar p {
+    padding-bottom: 20px;
+}
+.seminar p:nth-of-type(1) {
+    padding-bottom: 40px;
+}
+.seminar dl {
+    margin-top: 30px;
+    text-align: left;
+}
+.seminar dl dt {
+    border-bottom: solid 1px black;
+    margin-right: 250px;
+}
+.seminar dl dd {
+    margin-bottom: 10px;
+}
+.seminar .top-btn {
+    text-align: right;
+    margin-top: 50px;
+}
+.seminar .top-btn a:hover{
+    opacity: 1;
+}
+.seminar .top-btn button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: solid 1px black;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.seminar .top-btn button:hover {
+    background-color: black;
+    color: #fff;
+}
+.seminar .top-btn button span {
+    display: block;
+    line-height: 5px;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    font-size: 17px;
+}
+
+/*アニメーション*/
+h1,
+.title,
+.main{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 3s;
+}
+.title {
+    transition-delay: 0.5s;
+}
+.main {
+    transition-delay: 1s;
+}
+h1.show,
+.title.show,
+.main.show,
+p.show,
+h2.show,
+.google-maps.show,
+.access-list.show,
+.seminar-list.show {
+    opacity: 1;
+    transform: none;
+}
+
+p,
+h2,
+.google-maps,
+.access-list,
+.seminar-list {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 2s;
+}
+
+.toggle-content {
+    transform: translateY(-50px);
+    transition: all 0.5s;
+}
+.toggle-content.show {
+    transform: none;
+}
+
+
+
+
