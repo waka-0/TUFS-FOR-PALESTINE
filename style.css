@@ -126,7 +126,6 @@ header .overlay.show {
 .about .toggle.show {
     display: block;
     line-height: 25px;
-    transform: none;
 }
 
 h2 {
