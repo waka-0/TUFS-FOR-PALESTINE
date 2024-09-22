@@ -121,7 +121,7 @@ header .overlay.show {
 .about .toggle {
     line-height: 0;
     display: none;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .about .toggle.show {
     display: block;
