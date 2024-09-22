@@ -227,13 +227,6 @@ footer ul li a {
 /*アニメーション*/
 
 
-.toggle-content {
-    transform: translateY(-50px);
-    transition: all 0.5s;
-}
-.toggle-content.show {
-    transform: none;
-}
 
 
 
