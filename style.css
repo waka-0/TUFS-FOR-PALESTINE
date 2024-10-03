@@ -180,6 +180,15 @@ h2 {
 .seminar dl dd {
     margin-bottom: 10px;
 }
+.seminar .pdf {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.seminar a {
+    color: black;
+    text-decoration-line: underline;
+}
 .seminar .top-btn {
     text-align: right;
     margin-top: 50px;
