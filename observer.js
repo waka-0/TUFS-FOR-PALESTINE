@@ -9,7 +9,6 @@ function callback(entries, observer) {
 }
 const options = {
   threshold: 0,
-  rootMargin: "-200px",
 };
 const myObserver = new IntersectionObserver(callback, options);
 objectList.forEach((targetObject) => {
