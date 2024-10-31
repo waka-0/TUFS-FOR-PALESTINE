@@ -234,7 +234,40 @@ footer ul li a {
 }
 
 /*アニメーション*/
+h1,
+.title,
+.main{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 3s;
+}
+.title {
+    transition-delay: 0.5s;
+}
+.main {
+    transition-delay: 1s;
+}
+h1.show,
+.title.show,
+.main.show,
+p.show,
+h2.show,
+.google-maps.show,
+.access-list.show,
+.seminar-list.show {
+    opacity: 1;
+    transform: none;
+}
 
+p,
+h2,
+.google-maps,
+.access-list,
+.seminar-list {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 2s;
+}
 
 
 
