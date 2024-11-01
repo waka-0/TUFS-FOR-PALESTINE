@@ -8,7 +8,7 @@ function callback(entries, observer) {
   });
 }
 const options = {
-  threshold: 0,
+  threshold: 0.5,
 };
 const myObserver = new IntersectionObserver(callback, options);
 objectList.forEach((targetObject) => {
