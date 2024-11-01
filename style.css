@@ -121,7 +121,7 @@ header .overlay.show {
 .about .toggle {
     line-height: 0;
     display: none;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .about .toggle.show {
     display: block;
@@ -180,15 +180,6 @@ h2 {
 .seminar dl dd {
     margin-bottom: 10px;
 }
-.seminar .pdf {
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-.seminar a {
-    color: black;
-    text-decoration-line: underline;
-}
 .seminar .top-btn {
     text-align: right;
     margin-top: 50px;
@@ -233,6 +224,37 @@ footer ul li a {
     font-size: 17px;
 }
 
+/*レスポンシブ*/
+@media screen and (max-width:480px) {
+  .container {
+    width: 80%;
+  }
+  .main-visual {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .main-visual h1 {
+    font-size: 18px;
+  }
+  .main-visual dl {
+    text-align: left;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .access p span{
+    display: block;
+  }
+  .access .google-maps {
+    height: 200px;
+  }
+  .access iframe {
+    height: 200px;
+  }
+  .seminar dl dt {
+    margin-right: 0px;
+  }
+}
+
 /*アニメーション*/
 h1,
 .title,
@@ -269,6 +291,13 @@ h2,
     transition: all 2s;
 }
 
+.toggle-content {
+    transform: translateY(-50px);
+    transition: all 0.5s;
+}
+.toggle-content.show {
+    transform: none;
+}
 
 
 
